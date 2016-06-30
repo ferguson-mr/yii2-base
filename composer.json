@@ -1,0 +1,25 @@
+{
+    "name": "ferguson/yii2-based",
+    "description": "Base library and foundation components for all Yii2 ferguson extensions.",
+    "keywords": ["yii2", "extension", "widget", "ferguson", "base", "foundation"],
+    "homepage": "https://github.com/ferguson-mr/yii2-based",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ferguson",
+            "email": "Ferguson.Mr.F@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "^2.0"
+    },r
+    "require-dev": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "ferguson\\based\\": ""
+        }
+    }
+}

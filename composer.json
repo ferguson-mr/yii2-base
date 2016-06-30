@@ -13,7 +13,7 @@
     ],
     "require": {
         "yiisoft/yii2": "^2.0"
-    },r
+    },
     "require-dev": {
         
     },

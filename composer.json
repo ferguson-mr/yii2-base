@@ -1,5 +1,5 @@
 {
-    "name": "ferguson/yii2-based",
+    "name": "ferguson/yii2-base",
     "description": "Base library and foundation components for all Yii2 ferguson extensions.",
     "keywords": ["yii2", "extension", "widget", "ferguson", "base", "foundation"],
     "homepage": "https://github.com/ferguson-mr/yii2-based",
@@ -12,7 +12,8 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "^2.0"
+        "yiisoft/yii2": "^2.0",
+        "yiisoft/yii2-bootstrap": "@dev"
     },
     "require-dev": {
         

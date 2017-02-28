@@ -9,16 +9,15 @@
  * +------------------------------------------------------------------------
  */
 
-namespace ferguson\based\components;
+namespace ferguson\base\behaviors;
 
-
-use yii\base\Behavior;
-use yii\web\Controller;
+use \yii\base\Behavior;
+use \yii\web\Controller;
 
 class CsrfBehavior extends Behavior
 {
 
-    public $actions = [];
+    public $action = [];
     public $controller;
 
     public function events()
@@ -29,7 +28,7 @@ class CsrfBehavior extends Behavior
     public function beforeAction($event)
     {
         $action = $event->action->id;
-        if (in_array($action, $this->actions)) {
+        if (empty($this->action) || in_array('*', $this->action) || in_array($action, $this->action)) {
             $this->controller->enableCsrfValidation = false;
         }
     }

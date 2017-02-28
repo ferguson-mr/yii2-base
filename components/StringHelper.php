@@ -9,20 +9,33 @@
  * +------------------------------------------------------------------------
  */
 
-namespace ferguson\based\components;
-
+namespace ferguson\base\components;
 
 class StringHelper extends \yii\helpers\StringHelper
 {
-    public static function generateRandomString($length = 32)
+    public static function generateRandomString($length = 32, $lower = false, $replace = null)
     {
-        $str = null;
+        $string = null;
         $strPol = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
         $max = strlen($strPol) - 1;
         for ($i = 0; $i < $length; $i++) {
-            $str .= $strPol[rand(0, $max)];
+            $string .= $strPol[rand(0, $max)];
         }
-        return $str;
+
+        if ($lower) {
+            $string = strtolower($string);
+        }
+
+        if ($replace !== null) {
+            $_replace = [
+                '-' => '',
+                '_' => ''
+            ];
+            $replace = \yii\helpers\ArrayHelper::merge($_replace, $replace);
+            $string = strtr($string, $replace);
+        }
+
+        return $string;
     }
 
     /**

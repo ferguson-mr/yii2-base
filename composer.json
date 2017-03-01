@@ -2,7 +2,7 @@
     "name": "ferguson/yii2-base",
     "description": "Base library and foundation components for all Yii2 ferguson extensions.",
     "keywords": ["yii2", "extension", "widget", "ferguson", "base", "foundation"],
-    "homepage": "https://github.com/ferguson-mr/yii2-based",
+    "homepage": "http://git.mlfh.info/ferguson/yii2-base.git",
     "type": "yii2-extension",
     "license": "MIT",
     "authors": [

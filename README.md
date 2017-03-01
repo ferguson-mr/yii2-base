@@ -4,7 +4,7 @@ This is a base library with set of foundation classes and components used by all
 
 > NOTE: This extension depends on the [yiisoft/yii2-bootstrap](https://github.com/yiisoft/yii2/tree/master/extensions/bootstrap) extension. Check the [composer.json](http://git.mlfh.info/ferguson/yii2-base/src/master/composer.json) for this extension's requirements and dependencies. 
 
-
+## 
 
 ## Installation
 

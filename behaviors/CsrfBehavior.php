@@ -9,6 +9,7 @@ class CsrfBehavior extends Behavior
 {
 
     public $action = [];
+
     public $controller;
 
     public function events()

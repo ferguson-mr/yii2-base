@@ -55,7 +55,7 @@ class AssetBundle extends \yii\web\AssetBundle
             }
             $this->$type = YII_DEBUG ? $srcFiles : $minFiles;
         } elseif ($this->$type === self::EMPTY_ASSET) {
-            $this->$type = [];
+            $this->$type = $files;
         }
     }
 

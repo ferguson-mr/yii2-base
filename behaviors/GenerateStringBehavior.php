@@ -21,7 +21,9 @@ class GenerateStringBehavior extends Behavior
     {
         foreach ((array) $this->attributes as $attribute => $length)
         {
-            $this->owner->{$attribute} = StringHelper::generateRandomString($length, true, []);
+            if(!$this->owner->{$attribute}) {
+                $this->owner->{$attribute} = StringHelper::generateRandomString($length, true, []);
+            }
         }
     }
 }
